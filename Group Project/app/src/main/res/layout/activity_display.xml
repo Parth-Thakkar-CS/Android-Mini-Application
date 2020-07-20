@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".Display">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        android:layout_gravity="start"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:background="#FFFFFF"
+        android:padding="16sp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="5sp"
+            android:fontFamily="sans-serif-black"
+            android:text="Title"
+            android:textColor="@color/colorTitle"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/locationDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@+id/itemImg"
+            android:layout_toRightOf="@+id/itemImg"
+            android:text="Location:"
+            android:textColor="#A9A9A9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginStart="140sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@+id/itemImg"
+            android:layout_toRightOf="@+id/itemImg"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/availableDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@+id/itemImg"
+            android:layout_toRightOf="@+id/itemImg"
+            android:text="Available For:"
+            android:textColor="#A9A9A9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:layout_marginStart="140sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@+id/itemImg"
+            android:layout_toRightOf="@+id/itemImg"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/priceDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/available"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@+id/itemImg"
+            android:layout_toRightOf="@+id/itemImg"
+            android:text="Price (CAD):"
+            android:textColor="#A9A9A9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/available"
+            android:layout_marginStart="140sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@+id/itemImg"
+            android:layout_toRightOf="@+id/itemImg"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnContact"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Check for Availablity"
+            android:background="@drawable/button_background"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:layout_below="@+id/price"
+            android:onClick="checkAvailablity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/txtPosition"
+            android:layout_below="@+id/btnContact"/>
+
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

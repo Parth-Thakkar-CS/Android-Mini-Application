@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "536479779768",
+    "firebase_url": "https://estate-hunt.firebaseio.com",
+    "project_id": "estate-hunt",
+    "storage_bucket": "estate-hunt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536479779768:android:714bf5e022428dc7b2dd4d",
+        "android_client_info": {
+          "package_name": "com.example.estatehunt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536479779768-laflr5b2eiudukhha3v4qdbaj6905ub0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.estatehunt",
+            "certificate_hash": "105f6bce06eccec46c963d31193c61b409a859fd"
+          }
+        },
+        {
+          "client_id": "536479779768-ijp5mjouhjqs4bnqi221lkkrkvun8oor.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuWIYTc8Rg-ofWEIafmXQB2O_p3uqKvtk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536479779768-ijp5mjouhjqs4bnqi221lkkrkvun8oor.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    app:navigationIcon="@drawable/ic_menu"
+    app:title="Estate Hunt"
+    app:titleTextColor="@color/colorTitle"
+    android:gravity="top"
+    app:titleMargin="2sp"
+    app:subtitle="Discover Places Available!"
+    android:background="@drawable/theme_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/addToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100sp"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_add"
+        android:onClick="addItem"/>
+
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:layout_constraintCircleRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    android:foreground="?android:selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp">
+
+        <ImageView
+            android:id="@+id/itemImg"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:elevation="5dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_toEndOf="@+id/itemImg"
+            android:layout_toRightOf="@+id/itemImg"
+            android:text="Estate Hunt"
+            android:textColor="@color/colorTitle"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/itemType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemTitle"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@+id/itemImg"
+            android:layout_toRightOf="@+id/itemImg"
+            android:text="Description"
+            android:textColor="#A9A9A9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/itemLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemType"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@+id/itemImg"
+            android:layout_toRightOf="@+id/itemImg"
+            android:text="Description"
+            android:textColor="#A9A9A9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/itemAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemLocation"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_toEndOf="@+id/itemImg"
+            android:layout_toRightOf="@+id/itemImg"
+            android:text="Description"
+            android:textColor="#A9A9A9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemAvailable"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_toLeftOf="@+id/price"
+            android:layout_toEndOf="@+id/itemImg"
+            android:layout_toRightOf="@+id/itemImg"
+            android:text="$"
+            android:textColor="#B80000"
+            android:textSize="33sp" />
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemAvailable"
+            android:layout_marginStart="33sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@+id/itemImg"
+            android:layout_toRightOf="@+id/itemImg"
+            android:text="Description"
+            android:textColor="#A9A9A9"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

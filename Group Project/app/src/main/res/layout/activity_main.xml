@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        android:layout_gravity="start"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="60sp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlert"
+        android:text="Please Verify Your Email!"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorWhite"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:id="@+id/btnResend"
+        android:layout_marginTop="5sp"
+        android:text="Resend Email"
+        android:textColor="@color/colorAccent"
+        android:elevation="5sp"
+        android:textSize="18sp"
+        android:background="#B2E7E7E7"
+        android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerItem"
+            android:padding="10sp"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
